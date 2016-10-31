@@ -27,38 +27,6 @@ function myTime() {
 	return fmt00(d.getHours())+":"+fmt00(d.getMinutes())+":"+fmt00(d.getSeconds());
 }
 
-function displayCountdown( count ) {
-	//alert(document.body.style.backgroundImage);
-	var countSpan = $("#countdown");
-	$("#no_news").css('display', "none");
-	countSpan.css('display', "");
-
-
-	var min = fmt00(Math.floor(count / 60) );
-	var sec = fmt00(count % 60);
-	var tsec = Math.floor(10 * (count - Math.floor(count)));
-
-	if (count <= 0) {
-		// Just before news
-		countSpan.html("00.0");
-		countSpan.css('color', "red");
-	} else if (count < 60) {
-		countSpan.html(sec + "." + tsec);
-		if (count < 5) {
-			countSpan.css('color', "orange");
-		} else if (count < 10) {
-			countSpan.css('color', "yellow");
-		} else if (count < 30) {
-			countSpan.css('color', "#66FF66");
-		} else {
-			countSpan.css('color', "#CCFFFF");
-		}
-	} else {
-		countSpan.html(min + ":" + sec);
-		countSpan.css('color', "white");
-	}
-}
-
 function getSecs() { // gets the exact number of seconds past the hour
    var d = new Date();
    return (d.getMinutes() * 60 + d.getSeconds() + skew + d.getMilliseconds() / 1000);
