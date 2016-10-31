@@ -10,7 +10,16 @@
         
         <link rel="stylesheet" type="text/css" href="./studioclock_files/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="./studioclock_files/studioclock.css">
- 
+
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                <script type="text/javascript">
+                    var news_length_fudge = 1.7;
+                    var additional_skew = 0;
+                    var use_server_time = false;
+                </script>
+                <script type="text/javascript" src="./studioclock_files/bootstrap.js"></script>	
+                <script type="text/javascript" src="./studioclock_files/studioclock.js"></script>
+        
     </head>
     
     <holder>
@@ -29,6 +38,7 @@
                 <div class="last_updated">
                     <span id="last_update"></span>
                 </div>
+            
         </div>
     </header>
 
@@ -74,13 +84,7 @@
         
         </holder>
     
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script type="text/javascript">
-			var news_length_fudge = 1.7;
-			var additional_skew = 0;
-			var use_server_time = false;
-		</script>
-		<script type="text/javascript" src="./studioclock_files/studioclock.js"></script>
-		<script type="text/javascript" src="./studioclock_files/bootstrap.js"></script>
+    
+
         
 </html>
