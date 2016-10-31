@@ -26,12 +26,8 @@ html,body{
     position:relative;
 }
 
-#body{
-    padding-bottom: 100px;    /* height of footer */
-}
-
 footer{
-    height: 100px; 
+
     width: 100%;
     position: absolute;
     left: 0;
@@ -69,6 +65,7 @@ footer{
 	position: absolute;
 	text-align: center;
 	width: 100%;
+    display: none;
 }
 
 .no_news_div

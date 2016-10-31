@@ -29,13 +29,12 @@
     <header>
         <div class="jumbotron"> 
             
-            <div class="date">
+            <div class="date">#date
                 <span id="date"></span>
             </div>
             
             <div class="last_updated">Last Updated: 
-                <span id="last_update"></span>
-            </div>
+                <span id="last_update"></span></div>
 
             <div class="time">
                 <span id="time"></span>
@@ -53,47 +52,47 @@
     </header>
 
 	<body>
+    <div class="container-fluid">
         
-        <div class="row-fluid">
-            <div class="messagebox" id="messagebox-div">
-                <div id="adverts-bit" style="display: none;">
-                    <b>Adverts:</b>
-                    <span id="adverts_titles">None</span>
-                    <br>
-                    <div style="height: 15px"></div>
-                </div>
-                <div id="motd-div" style="font-size: 34px;">
+        <div class="row">
+                <div id="motd-div col-md-12" style="font-size: 28px;text-align:center">
                     <b>Message of the Day:</b>
                     <span id="motd"></span>
                 </div>
                 <br>
             </div>
         </div>
+       
+        </body>
         
-        <div class="row-fluid">
-            <div class="info span6">
+        <footer>
+        <div class="container-fluid">   
+            <div class="row margin-bottom">
+            <div class="info col-md-6 margin-botton">
                 <table id="info">
                     <tbody><tr>
                         <th>Transmit Selector:</th>
-                        <td id="source">Studio 1</td>
+                        <td id="source"></td>
                     </tr>
                     <tr>
                         <th id="programme_name_title">Show Name:</th>
-                        <td id="programme_name">No Show Scheduled</td>
+                        <td id="programme_name"></td>
                     </tr>
                     <tr>
                         <th id="programme_djs_title">Show DJs:</th>
-                        <td id="programme_djs">No DJs Scheduled</td>
+                        <td id="programme_djs"></td>
                     </tr>
                 </tbody></table>
             </div>
             
-            <div class="ticker span6">
+            <div class="ticker col-md-6">
                 <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="1308/"></script> <!-- end feedwind code -->
             </div>
         </div>
+        </div>
+        </footer>
         
-        </body>
+        
         
         </holder>
     
