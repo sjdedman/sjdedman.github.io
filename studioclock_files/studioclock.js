@@ -120,7 +120,7 @@ function update() {
 
 function get_globalData(){
 
-	$.get("http://surgeradio.co.uk/studioclock/data.html", function(data) {
+	$.get("https://surgeradio.co.uk/studioclock/data.html", function(data) {
 		globalData = data;
 		console.log(globalData);
 		var server_time = Date.parse(globalData.datetime);
