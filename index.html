@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0035)http://surgeradio.co.uk/studioclock -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Surge StudioClock 2.0</title>
+        
+        <link rel="stylesheet" type="text/css" href="./studioclock_files/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./studioclock_files/studioclock.css">
+ 
+    </head>
+    
+    <holder>
+    
+    <header>
+        <div class="jumbotron"> 
+                <div class="time">
+			         <span id="time"></span>
+                </div> 
+            
+                <div class="date">
+			         <span id="date"></span>
+                </div>
+                
+                <div class="last_updated">Last Updated: 
+                    <span id="last_update"></span>
+                </div>
+        </div>
+    </header>
+
+	<body>
+        
+		<div class="ticker">
+			<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="1308/"></script> <!-- end feedwind code -->
+		</div>
+
+
+		<div class="messagebox" id="messagebox-div">
+			<div id="adverts-bit" style="display: none;">
+				<b>Adverts:</b>
+				<span id="adverts_titles">None</span>
+				<br>
+				<div style="height: 15px"></div>
+			</div>
+			<div id="motd-div" style="font-size: 34px;">
+				<b>Message of the Day:</b>
+				<span id="motd">We hope your shows are going well, if you want to know how to use Adobe Audition, Andrew is running a session on Tuesday evening, see the Facebook event for more details!</span>
+			</div>
+			<br>
+		</div>
+
+		<div class="info" id="info-div">
+			<table id="info">
+				<tbody><tr>
+					<th>Transmit Selector:</th>
+					<td id="source">Studio 1</td>
+				</tr>
+				<tr>
+					<th id="programme_name_title">Show Name:</th>
+					<td id="programme_name">No Show Scheduled</td>
+				</tr>
+				<tr>
+					<th id="programme_djs_title">Show DJs:</th>
+					<td id="programme_djs">No DJs Scheduled</td>
+				</tr>
+			</tbody></table>
+		</div>
+
+		<div class="last_updated">Last Updated: <span id="last_update">Mon Oct 31 2016 16:29:20 GMT+0000 (GMT Standard Time)</span></div>
+	
+
+        </body>
+        
+        </holder>
+    
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			var news_length_fudge = 1.7;
+			var additional_skew = 0;
+			var use_server_time = false;
+		</script>
+		<script type="text/javascript" src="./studioclock_files/studioclock.js"></script>
+		<script type="text/javascript" src="./studioclock_files/bootstrap.js"></script>
+        
+</html>
