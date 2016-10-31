@@ -44,42 +44,45 @@
 
 	<body>
         
-		<div class="ticker">
-			<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="1308/"></script> <!-- end feedwind code -->
-		</div>
-
-
-		<div class="messagebox" id="messagebox-div">
-			<div id="adverts-bit" style="display: none;">
-				<b>Adverts:</b>
-				<span id="adverts_titles">None</span>
-				<br>
-				<div style="height: 15px"></div>
-			</div>
-			<div id="motd-div" style="font-size: 34px;">
-				<b>Message of the Day:</b>
-				<span id="motd"></span>
-			</div>
-			<br>
-		</div>
-
-		<div class="info" id="info-div">
-			<table id="info">
-				<tbody><tr>
-					<th>Transmit Selector:</th>
-					<td id="source">Studio 1</td>
-				</tr>
-				<tr>
-					<th id="programme_name_title">Show Name:</th>
-					<td id="programme_name">No Show Scheduled</td>
-				</tr>
-				<tr>
-					<th id="programme_djs_title">Show DJs:</th>
-					<td id="programme_djs">No DJs Scheduled</td>
-				</tr>
-			</tbody></table>
-		</div>	
-
+        <div class="row-fluid">
+            <div class="messagebox" id="messagebox-div">
+                <div id="adverts-bit" style="display: none;">
+                    <b>Adverts:</b>
+                    <span id="adverts_titles">None</span>
+                    <br>
+                    <div style="height: 15px"></div>
+                </div>
+                <div id="motd-div" style="font-size: 34px;">
+                    <b>Message of the Day:</b>
+                    <span id="motd"></span>
+                </div>
+                <br>
+            </div>
+        </div>
+        
+        <div class="row-fluid">
+            <div class="info span6">
+                <table id="info">
+                    <tbody><tr>
+                        <th>Transmit Selector:</th>
+                        <td id="source">Studio 1</td>
+                    </tr>
+                    <tr>
+                        <th id="programme_name_title">Show Name:</th>
+                        <td id="programme_name">No Show Scheduled</td>
+                    </tr>
+                    <tr>
+                        <th id="programme_djs_title">Show DJs:</th>
+                        <td id="programme_djs">No DJs Scheduled</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            
+            <div class="ticker span6">
+                <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="1308/"></script> <!-- end feedwind code -->
+            </div>
+        </div>
+        
         </body>
         
         </holder>
