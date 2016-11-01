@@ -20,35 +20,27 @@
         <script type="text/javascript" src="./js/studioclock.js"></script>
         
     </head>
-    
-    <holder>
-    
-        <!--<div class="progress_holder">
-		<div class="progress">
-		<div id="prog"></div>
-		</div>
-		</div>-->
-        
+
     <header>
-        <div class="jumbotron"> 
+        <div class="container-fluid"> 
             
-            <div class="date">
-                <span id="date"></span>
+            <div class="row">
+            
+                <div class="col-md-12">
+                
+                    <div class="date">
+                        <span id="date"></span>
+                    </div>
+            
+                </div>
+            
             </div>
             
-            <div class="last_updated">Last Updated: 
-                <span id="last_update"></span></div>
-
-            <div class="time">
-                <span id="time"></span>
-            </div>
-
-            <div class="countdown">
-                <span id="countdown"></span>
-            </div>
-
-            <div class="no_news_div">
-                <span id="no_news"></span>
+            <div class="row">
+                    <div class="col-md-12">
+                        <div class="last_updated">Last Updated: 
+                            <span id="last_update"></span></div>
+                    </div>
             </div>
             
         </div>
@@ -56,6 +48,12 @@
 
 	<body>
     <div class="container-fluid">
+        
+        <div class="row">
+               <div class="col-md-12 time">
+                <span id="time"></span>
+            </div>
+        </div>        
         
         <div class="col-md-12 spacer"></div> 
         <div class="col-md-12 spacer"></div>
@@ -70,7 +68,12 @@
         <div class="col-md-12 spacer"></div>
         <div class="col-md-12 spacer"></div> 
         
-                <div class="info col-md-12 margin-botton" id="info-div">
+        
+    </div>
+    
+    <footer>
+        
+        <div class="info col-md-6 margin-botton" id="info-div">
                 <table id="info">
                     <tbody><tr>
                         <th>Transmit Selector:</th>
@@ -85,19 +88,23 @@
                         <td id="programme_djs"></td>
                     </tr>
                 </tbody></table>
+        </div>
+        
+        <div class="col-md-6 margin-bottom">
+                    <div class="countdown">
+                <span id="countdown"></span>
             </div>
-        
-    </div>
-    
-        
+
+            <div class="no_news_div">
+                <span id="no_news"></span>
+            </div>
+        </div>
+
+    </footer>    
  
         
         
-    </body>      
-        
-        </holder>
-    
-    
+    </body>          
 
         
 </html>
