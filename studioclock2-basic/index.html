@@ -5,12 +5,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Surge StudioClock 2.0</title>
+        <title>studioclock2-basic</title>
         
         <link rel="stylesheet" type="text/css" href="./style/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="./style/studioclock.css">
 
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
                 <script type="text/javascript">
                     var news_length_fudge = 1.7;
                     var additional_skew = 0;
@@ -18,6 +18,7 @@
                 </script>
         <script type="text/javascript" src="./js/bootstrap.js"></script>	
         <script type="text/javascript" src="./js/studioclock.js"></script>
+        <script type="text/javascript" src="./js/dedmanjs.js"></script>
         
     </head>
 
@@ -91,7 +92,12 @@
         </div>
         
         <div class="col-md-6 margin-bottom">
-                    <div class="countdown">
+            
+            <div class="dedmancount">
+                <span id="ded-min-part"></span>:<span id="ded-sec-part"></span>
+            </div>
+            
+            <div class="countdown">
                 <span id="countdown"></span>
             </div>
 
