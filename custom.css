@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+.jumbotron {
+    background-color: #3498db;
+    margin-bottom:0;
+}
+.jumbotron h1{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.jumbotron p{
+    color: #F9FAFB;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.greenbar {
+    margin-top: auto;
+    background-color: #2ecc71;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.greenbar h1 {
+    color: #fff;
+}
+.greenbar h2 {
+    color: #fff;
+}
+.greenbar h3 {
+    color: #fff;
+}
+.greenbar h4 {
+    color: #F9FAFB;
+}
+.greenbar small {
+    color: #F9FAFB;
+}
+
+
+
+
+
+
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// in case your dealing with a block element apply this to the element itself 
+.center-block {
+   margin-left:auto;
+   margin-right:auto;
+   display:center;
+}
+// in case your dealing with a inline element apply this to the parent 
+.text-center {
+   text-align:center
+}
