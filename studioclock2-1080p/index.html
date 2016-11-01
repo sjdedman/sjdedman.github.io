@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0035)http://surgeradio.co.uk/studioclock -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Surge StudioClock 2.0</title>
+        
+        <link rel="stylesheet" type="text/css" href="./style/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./style/studioclock.css">
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+                <script type="text/javascript">
+                    var news_length_fudge = 1.7;
+                    var additional_skew = 0;
+                    var use_server_time = false;
+                </script>
+        <script type="text/javascript" src="./js/bootstrap.js"></script>	
+        <script type="text/javascript" src="./js/studioclock.js"></script>
+        
+    </head>
+    
+    <holder>
+    
+        <!--<div class="progress_holder">
+		<div class="progress">
+		<div id="prog"></div>
+		</div>
+		</div>-->
+        
+    <header>
+        <div class="jumbotron"> 
+            
+            <div class="date">
+                <span id="date"></span>
+            </div>
+            
+            <div class="last_updated">Last Updated: 
+                <span id="last_update"></span></div>
+
+            <div class="time">
+                <span id="time"></span>
+            </div>
+
+            <div class="countdown">
+                <span id="countdown"></span>
+            </div>
+
+            <div class="no_news_div">
+                <span id="no_news"></span>
+            </div>
+            
+        </div>
+    </header>
+
+	<body>
+    <div class="container-fluid">
+        
+        <div class="col-md-12 spacer"></div> 
+        <div class="col-md-12 spacer"></div>
+        
+        <div class="row">
+                <div class="col-md-12" id="motd-div" style="font-size: 28px;text-align:center;font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;font-weight: 400; ">
+                    <b>Message of the Day:</b>
+                    <span id="motd"></span>
+                </div>
+        </div>
+        
+        <div class="col-md-12 spacer"></div>
+        <div class="col-md-12 spacer"></div> 
+        
+                <div class="info col-md-12 margin-botton" id="info-div">
+                <table id="info">
+                    <tbody><tr>
+                        <th>Transmit Selector:</th>
+                        <td id="source"></td>
+                    </tr>
+                    <tr>
+                        <th id="programme_name_title">Show Name:</th>
+                        <td id="programme_name"></td>
+                    </tr>
+                    <tr>
+                        <th id="programme_djs_title">Show DJs:</th>
+                        <td id="programme_djs"></td>
+                    </tr>
+                </tbody></table>
+            </div>
+        
+    </div>
+    
+        
+ 
+        
+        
+    </body>
+        
+        <footer>
+        <div class="container-fluid footer">   
+            <div class="row">centre 
+
+                <div class="col-md-6 ticker">
+                    <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="1308/"></script>
+                </div>
+
+                <div>
+                    <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="50%" src="https://forecast.io/embed/#lat=50.9097&lon=-1.4044&name=Southampton, UK&font=Helvetica&units=uk"> </iframe>
+                </div>
+            
+        </div>
+        </div>
+        </footer>
+        
+        
+        
+        </holder>
+    
+    
+
+        
+</html>
