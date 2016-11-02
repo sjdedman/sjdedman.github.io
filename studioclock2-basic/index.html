@@ -18,7 +18,6 @@
                 </script>
         <script type="text/javascript" src="./js/bootstrap.js"></script>	
         <script type="text/javascript" src="./js/studioclock.js"></script>
-        <script type="text/javascript" src="./js/dedmanjs.js"></script>
         
     </head>
 
@@ -60,21 +59,19 @@
         <div class="col-md-12 spacer"></div>
         
         <div class="row">
-                <div class="col-md-12" id="motd-div" style="font-size: 28px;text-align:center;font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;font-weight: 400; ">
+                <div class="motd col-md-12" id="motd-div">
                     <b>Message of the Day:</b>
                     <span id="motd"></span>
                 </div>
         </div>
         
-        <div class="col-md-12 spacer"></div>
-        <div class="col-md-12 spacer"></div> 
         
         
     </div>
-    
-    <footer>
         
-        <div class="info col-md-6 margin-botton" id="info-div">
+<footer class="footer">
+<div class="container-fluid">
+        <div class="info col-md-8" id="info-div">
                 <table id="info">
                     <tbody><tr>
                         <th>Transmit Selector:</th>
@@ -91,11 +88,48 @@
                 </tbody></table>
         </div>
         
-        <div class="col-md-6 margin-bottom">
-            
-            <div class="dedmancount">
-                <span id="ded-min-part"></span>:<span id="ded-sec-part"></span>
+        <div class="countdown2 col-md-4">
+                <table id="countdown2">
+                    <tbody><tr>
+                        <th>Show minutes left:</th>
+                        <td id="min-part"> </td>
+                    </tr> 
+                    <tr>
+                        <th>Show seconds left:</th>
+                        <td id="sec-part"></td>
+                    </tr>
+                </tbody></table>
+    
+                    <script>
+                      var byId = document.getElementById.bind(document);
+
+                      function updateTime()
+                      {
+                        var
+                          time = new Date(),
+                          // take 1800 seconds (30 minutes) and substract the remaining minutes and seconds
+                          // 30 minutes mark is rest of (+30 divided by 60); *60 in seconds; substract both, mins & secs
+                          secsRemaining = 3600 - (time.getUTCMinutes())%60 * 60 - time.getUTCSeconds(),
+                          // integer division
+                          mins = Math.floor(secsRemaining / 60),
+                          secs = secsRemaining % 60
+                        ;
+                        byId('min-part').textContent  = mins;
+                        byId('sec-part').textContent  = secs;
+
+                        // let's be sophisticated and get a fresh time object
+                        // to calculate the next seconds shift of the clock
+                        setTimeout( updateTime, 1000 - (new Date()).getUTCMilliseconds() );
+                      }
+
+                      updateTime();
+                        
+
+
+                    </script>
             </div>
+</div>
+</footer>
             
             <div class="countdown">
                 <span id="countdown"></span>
@@ -104,9 +138,6 @@
             <div class="no_news_div">
                 <span id="no_news"></span>
             </div>
-        </div>
-
-    </footer>    
  
         
         

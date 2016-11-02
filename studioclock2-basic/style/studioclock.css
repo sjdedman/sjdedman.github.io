@@ -66,36 +66,50 @@ footer{
     display: none;
 }
 
-.messagebox
+.motd
 {
-    position: absolute;
-    font-size: 34px;
+	font-size: 4vw;
     font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 400;
 	text-align: center;
-	width: 100%;
-	color: #ffffff;
 }
 
 .info th
 {
-	font-size: 26px;
+	font-size: 1.8vw;
     font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 700; 
-	text-align: right;
+	text-align: left;
 	font-weight: bold;
-	padding: 0px 5px 5px 0px;
+    line-height: 95%;
+
 }
 
 .info td
 {
-	font-size: 32px;
+	font-size: 1.8vw;
 	font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 400; 
     text-align: left;
-	padding: 0px 5px 5px 0px;
 }
 
+.countdown2 th
+{
+	font-size: 1.8vw;
+    font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
+    font-weight: 700; 
+	text-align: left;
+	font-weight: bold;
+
+}
+
+.countdown2 td
+{
+	font-size: 1.8vw;
+	font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
+    font-weight: 400; 
+    text-align: left;
+}
 .credit
 {
 	font-family: Geneva, Helvetica, Arial, verdana, sans-serif;
@@ -118,16 +132,29 @@ footer{
 }
 
 table#info {
-  text-align: center;
-  width: 100%;
+
+  width: auto;
 }
 
+
 table#info th {
-  width: 50%;
+  text-align: right;
 }
 
 table#info td {
-  width: 50%;
+  text-align: left;
+  position: relative; 
+  left: 10px;
+}
+
+table#countdown2 th {
+  text-align: right;
+}
+
+table#countdown2 td {
+  text-align: left;
+  position: relative; 
+  left: 10px;
 }
 
 div.progress_holder {
@@ -153,18 +180,7 @@ div#prog {
 	width: 0px;
 }
 
-.footer {
-    background-color: white;
-}
 .spacer {
     margin-top: 40px; /* define margin as you see fit */
 }
 
-.dedmancount
-{
-	font-size: 4.5vw;
-    font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
-    font-weight: 400;
-	text-align: center;
-    
-}
