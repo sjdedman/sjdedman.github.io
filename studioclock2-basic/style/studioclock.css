@@ -41,7 +41,7 @@ footer{
 .time
 {
     text-align: center;
-    font-size: 10vw;
+    font-size: 8.5vw;
     font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 700; 
 	width: 100%;
@@ -65,7 +65,7 @@ footer{
 {
     font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 400;
-	font-size: 2.2vw;
+	font-size: 2.0vw;
 	text-align: center;
 }
 
@@ -173,4 +173,12 @@ div#prog {
 	height: 10px;
 	background-color: #81cfc2;
 	width: 0px;
+}
+.container-table {
+    display: table;
+    height: 70%;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
 }
