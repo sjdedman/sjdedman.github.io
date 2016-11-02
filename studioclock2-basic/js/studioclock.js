@@ -222,7 +222,6 @@ function resize_motd() {
 	var info = $("#info-div");
 	var size = 34;
 	do {
-		motd.css('fontSize', size + 'px');
 		var motd_bottom = motd.offset().top + motd.outerHeight();
 		var info_top = info.offset().top;
 		size -= 2;
