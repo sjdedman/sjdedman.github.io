@@ -25,13 +25,18 @@ footer{
 
     width: 100%;
     position: absolute;
-    left: 0;
     bottom: 0; 
+}
+
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .date
 {
-    font-size: 3vw;
+    font-size: 3vmax;
     font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 700;
 	width: 100%;
@@ -41,7 +46,7 @@ footer{
 .time
 {
     text-align: center;
-    font-size: 8.5vw;
+    font-size: 12vmax;
     font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 700; 
 	width: 100%;
@@ -65,13 +70,14 @@ footer{
 {
     font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 400;
-	font-size: 2.0vw;
+	font-size: 3.0vmax;
 	text-align: center;
+    line-height: 105%;
 }
 
 .info th
 {
-	font-size: 1.8vw;
+	font-size: 3vh;
     font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 700; 
 	text-align: left;
@@ -82,7 +88,7 @@ footer{
 
 .info td
 {
-	font-size: 1.8vw;
+	font-size: 1.8vmax;
 	font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 400; 
     text-align: left;
@@ -90,7 +96,7 @@ footer{
 
 .countdown2 th
 {
-	font-size: 1.8vw;
+	font-size: 1.8vmax;
     font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 700; 
 	text-align: left;
@@ -100,7 +106,7 @@ footer{
 
 .countdown2 td
 {
-	font-size: 1.8vw;
+	font-size: 1.8vmax;
 	font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 400; 
     text-align: left;
@@ -121,7 +127,7 @@ footer{
 {
     font-family: Montserrat, Helvetica, Arial, verdana, sans-serif;
     font-weight: 400;
-	font-size: 0.8vw;
+	font-size: 0.8vmax;
     text-align: right;
 	color: #FFF;
 }
@@ -174,11 +180,7 @@ div#prog {
 	background-color: #81cfc2;
 	width: 0px;
 }
-.container-table {
-    display: table;
-    height: 70%;
-}
-.vertical-center-row {
-    display: table-cell;
-    vertical-align: middle;
+.fullh {
+    position: absolute;
+    top: 15%;
 }
