@@ -15,6 +15,7 @@ body
 	background-position: 0px 15px;
 	background-color: black;
 	cursor: none;
+    overflow:hidden;
 }
 
 html,body{
@@ -182,5 +183,5 @@ div#prog {
 }
 .fullh {
     position: absolute;
-    top: 10%;
+    top: 15%;
 }
