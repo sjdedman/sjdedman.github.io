@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="refresh" content="1800" />
         <title>Surge StudioClock 2.0</title>
         
         <link rel="stylesheet" type="text/css" href="./style/bootstrap.css">
@@ -140,14 +141,6 @@
                     <iframe id="BBC_embed" name="BBC_embed" width="100%" height="245" frameBorder="0" src="https://feed.mikle.com/widget/v2/1308/" />
                 </div>
             </div>
-            <script>
-                window.setInterval("reloadIFrame();", 5);
-
-                function reloadIFrame() {
-                    document.frames["forecast_embed"].location.reload();
-                    document.frames["BBC_embed"].location.reload();
-                }
-            </script>
         </div>
         </footer>
         
